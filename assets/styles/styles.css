@@ -1,0 +1,523 @@
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    /*background: #E8F9FF;*/
+}
+
+/* DUMMY CONTAINERS */
+.dummy-container {
+    margin: 1%;
+    padding: 1%;
+    border: solid; color: black; border-width: thin;
+}
+.dummy-button {
+    width: fit-content;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+/* GLOBAL SECTIONS */
+.container {
+    margin: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.section {
+    margin: 6% 0 0 0;
+
+}
+.section-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 2%;
+    width: auto;
+    border: solid; color: black; border-width: thin;
+}
+.section-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 2%;
+    width: auto;
+    border: solid; color: black; border-width: thin;
+}
+.sub-section {
+    display: flex;
+    flex: 1;
+    padding: 1%;
+}
+.sub-section-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 2%;
+    width: auto;
+    padding: 1%;
+    background: lightgrey;
+}
+.sub-section-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: auto;
+    padding: 1%;
+    background: lightgrey;
+}
+.row-centre {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    padding: 1%;
+}
+/* Global Margins, Padding and Alignment*/
+.mt3 {margin-top: 3%;}
+
+.w70 {width: 70%;}
+
+.ai-c {align-items: center;}
+
+
+
+
+/* HEADER SECTION */
+
+/* HIDE Mobile McDonalds Big Mac Navigation Menu until Screen Size 768px */
+.bigmac-section {
+    display: none;
+}
+.header-section {
+    display: flex;
+    width: auto;
+    margin-bottom: 1%;
+}
+.nav-section {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 94%;
+    padding: 1%;
+    background: white;
+    z-index: 1;
+}
+.logo-section {
+    display: flex;
+    justify-content: flex-start;
+}
+.logo {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 98%;
+}
+.contact-button-section {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1% 2% 1% 2%;
+}
+/*  Dropdown Menu inside a Navigation Bar */
+.nav-button {
+    float: left;
+}
+.nav-button a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-button a:hover, .dropdown:hover .dropbtn {
+    background-color: skyblue;
+}
+.nav-button.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+/*    color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: auto;
+    margin: 6% 0 0 0;
+    border: solid; color: black; border-width: thin;
+}
+.hero-sub-subtion-1 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    width: auto;
+    border: solid; color: black; border-width: thin;
+}
+.hero-content-section {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: auto;
+    padding: 1%;
+}
+.hero-sub-subtion-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: auto;
+    height: 90%;
+    border: solid; color: black; border-width: thin;
+}
+.hero-img {
+    width: 100%;
+}
+.hero-2-contents {
+    margin: 4% 15% 4% 15%;
+}
+
+/* Hero elements overlaying image */
+.hero-overlay-title {
+    position: absolute;
+    top: 20%;
+    left: 27%;
+}
+.hero-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.hero-overlay-button {
+    position: absolute;
+    padding: 1%;
+    top: 65%;
+    left: 45%;
+    background: skyblue;
+    border-radius: 10px;
+}
+
+/* CONTACT SECTION */
+.form-section {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-top: 2%;
+    padding: 2%;
+}
+form {
+    padding: 2%;
+    border-radius: 10px;;
+    background: lightgrey;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background: lightgrey;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer-sub-section {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+
+/* CONTENT STYLING */
+/* =============== */
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 300%;
+    margin: 1% 0 0 0;
+    padding: 0;
+    color: black;
+}
+.h1-overlay {
+    font-size: 600%;
+    color: blue;
+}
+h2 {
+    text-align: center;
+    font-size: 250%;
+    margin-top: 0;
+    color:  black;
+}
+h3 {
+    font-size: 150%;
+    margin-top: 0;
+    color:  black;
+}
+.h3-centre {
+    text-align: center;
+}
+p {
+    font-size: large;
+    margin: 1% 0 0 0;
+    color: black
+}
+li {
+    font-size: large;
+    padding: 1%;
+    color: black
+}
+.p-overlay {
+    font-size: x-large;
+    color: white;
+}
+.p-centre {
+    text-align: center;
+}
+.p-bold {
+    font-weight: bold;
+}
+
+
+.button-contact {
+    width: 10%;
+    padding: 1%;
+    text-decoration: none;
+}
+.button-quote {
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+.image-logo {
+    width: 30%;
+}
+
+
+
+/* DEVICE BREAKPOINTS */
+/* 768px Single Column */
+/*@media (max-width: 768px) {*/
+
+/* 876px Reduce Navigation Bar Font Size */
+/*@media (min-width: 769px) and (max-width: 876px) {*/
+
+/* 976px Reduce Image Header */
+@media (max-width: 976px) {
+
+    .h1-overlay {
+        font-size: 400%;
+        color: blue;
+    }
+
+}
+
+/* 876px Increase Hero Top Margin */
+@media (max-width: 876px) {
+
+    .hero-section {
+        margin-top: 15%;
+    }
+    .nav-text {
+        font-size: small;
+    }
+
+}
+
+/* 768px Single Column */
+/* McDonalds Big Mac Navigation */
+@media (max-width: 768px) {
+
+    .section-flex-row {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border: solid; color: black; border-width: thin;
+    }
+    .sub-section-row {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 1%;
+        background: lightgrey;
+    }
+    .hero-sub-subtion-1 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border: solid; color: black; border-width: thin;
+    }
+    .hero-content-section {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 1%;
+    }
+    .hero-2-contents {
+        margin: 0 0 1% 0;
+    }
+
+    /* Hero elements overlaying image */
+    .hero-overlay-title {
+        position: absolute;
+        top: 15%;
+        left: 20%;
+    }
+    .hero-overlay-text {
+        position: absolute;
+        /*top: 50%;*/
+        left: 43%;
+    }
+    .hero-overlay-button {
+        position: absolute;
+        /*padding: 1%;
+        top: 65%;*/
+        left: 40%;
+        /*background: skyblue;
+        border-radius: 10px;*/
+    }
+    .h1-overlay {
+        font-size: 300%;
+    }
+    .p-overlay {
+        font-size: large;
+    }
+        
+
+
+
+
+    .h3-centre {
+        text-align: left;
+    }
+    .p-centre {
+        text-align: left;
+    }
+    .row-centre {
+        display: flex;
+        align-items:start;
+        padding: 1%;
+    }
+
+    .header-section {
+        display: none;
+    }
+
+    /* Display McDonalds Big Mac Menu */
+    .bigmac-section {
+        display: contents;
+        width: 98%;
+        margin: 2%;
+        height: 500px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+    }
+    .bigmac {
+        display: flex;
+        overflow: hidden;
+        width: auto;
+        position: relative;
+        margin-bottom: 2%;
+    }
+    .bigmac #bigmac-links {
+        display: none;
+    }
+    .bigmac a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .bigmac a.icon {
+        background: blue;
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .bigmac a:hover {
+        background-color: skyblue;
+        color: blue;
+    }
+    a.active {
+        font-family: "Playfair Display", serif;
+        font-size: xxx-large;
+        font-weight: bold;
+        color: blue;
+        background-color: white;
+    }
+    /*  Dropdown Menu inside a Navigation Bar */
+    a, .dropbtn {
+        display: inline-block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .dropbtn {
+        text-align: left;
+    }
+    a:hover, .dropdown:hover .dropbtn {
+        background-color: skyblue;
+    }
+    .dropdown {
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        top: 27%;
+        right: 36.5%;
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 4%;
+        padding: 1%;
+    }
+    h2 {
+        text-align: start;
+    }
+    .row-centre {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+

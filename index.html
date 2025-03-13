@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton Template: Trade Business Style 1</title>
+
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Link to Icon for McDonalds Big Mac Navigation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER SECTION -->
+        <!-- Hidden when screen size is 768px or below -->
+        <div class="header-section" id="header">
+
+            <!-- Navigation Bar-->
+            <div class="nav-section">
+
+                <div class="logo-section">
+                    <a href="#header" class="logo">Plumbers <br>Co</a>
+                </div>
+
+                <div class="navbar">
+
+                    <div class="nav-button"><a href="#introduction" class="nav-text">INTRODUCTION</a></div>
+                    <div class="nav-button"><a href="#about" class="nav-text">ABOUT US</a></div>
+                
+                    <!-- Dropdown -->
+                    <div class="nav-button dropdown">
+                
+                        <a href="javascript:void(0)" class="dropbtn nav-text">SERVICES WE PROVIDE</a>
+                        <div class="dropdown-content">
+                            <a href="" class="nav-text">ALL SERVICES</a>
+                            <a href="" class="nav-text">BATHROOM FITTING</a>
+                            <a href="" class="nav-text">PLUMBING</a>
+                            <a href="" class="nav-text">CENTRAL HEATING</a>
+                        </div>
+                
+                    </div>
+                
+                    <div class="nav-button"><a href="#reviews" class="nav-text">READ REVIEWS</a></div>
+                    <div class="nav-button"><a href="#gallery" class="nav-text">VIEW GALLERY</a></div>
+                    <div class="nav-button"><a href="#blog" class="nav-text">OUR BLOG</a></div>
+
+                </div>
+    
+                <button class="button-contact"><a href="#contact" class="button-contact">CONTACT US</a></button>
+
+            </div>
+
+        </div>
+
+        <!-- MOBILE McDONALDS BIG MAC NAVIGATION MENU -->
+        <!-- Displayed when screen size is 768px or below -->
+        <div class="bigmac-section">
+
+            <!-- Top Navigation Menu -->
+            <div class="bigmac">
+                <a href="" class="active">Plumbers Co.</a>
+                <div id="bigmac-links">
+                    <a href="#introduction">INTRODUCTION</a>
+                    <a href="#about">ABOUT US</a>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">SERVICES WE PROVIDE</a>
+                        <div class="dropdown-content">
+                            <a href="" class="nav-text">ALL SERVICES</a>
+                            <a href="" class="nav-text">BATHROOM FITTING</a>
+                            <a href="" class="nav-text">PLUMBING</a>
+                            <a href="" class="nav-text">CENTRAL HEATING</a>
+                        </div>
+                    </div>
+
+                    <a href="#reviews">READ REVIEWS</a>
+                    <a href="#gallery">VIEW GALLERY</a>
+                    <a href="#blog">OUR BLOG</a>
+                    <a href="#contact">CONTACT US</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            </div>
+            
+            <div style="padding-left:16px"><p></p></div>
+            
+        <!-- End smartphone / tablet look -->
+        </div>
+
+        <!-- SCRIPT for Mobile McDonalds Big Mac Menu -->
+        <script>
+            function myFunction() {
+              var x = document.getElementById("bigmac-links");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+
+
+
+        <!-- HERO SECTION -->
+        <div id="hero" class="hero-section">
+
+            <div class="hero-sub-subtion-1">
+
+                <div class="hero-content-section">
+                    <h1>Professional Bathroom Fitters</h1>
+                </div>
+
+                <div class="hero-content-section">
+                    <p class="hero-2-contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>  
+                </div>
+
+            </div>
+
+            <div class="hero-sub-subtion-2">
+
+                <img src="/assets/images/bathroom-3563272_1280_cine.webp" class="hero-img">
+
+                <div class="hero-overlay-title"><h1 class="h1-overlay">Plumbers Co</h1></div>
+                <div class="hero-overlay-text"><p class="p-overlay">Overlay Text</p></div>
+                <div class="hero-overlay-button">
+                    <a href="#" class="button-quote">GET A QUOTE</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- INTRODUCTION SECTION -->
+        <div id="introduction" class="section section-flex-row intro-section">
+
+            <div class="sub-section-column">
+                <h3>Professional Bathroom Fitters Ltd</h3>
+                <p>Brief description about the company.</p>
+                <p>Summary of services supplied</p>
+                <p>Geographical areas covered.</p>
+                <p>How to get in contact with us.</p>
+            </div>
+
+            <div class="sub-section-column">
+                
+                <h3 class="h3-centre">Accreditations</h3>
+                <div class="sub-section-row row-centre column">
+                    <img src="/assets/images/logo.jpg" class="image-logo">
+                    <img src="/assets/images/logo.jpg" class="image-logo">
+                </div>
+
+                <div class="sub-section-column ai-c">
+                    <h3 class="h3-centre mt3">Qualifications</h3>
+                    <div class="sub-section-column w70">
+                        <ul>
+                            <li>Qualification 1 xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx </li>
+                            <li>Qualification 2</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICES SECTION -->
+        <div id="services" class="section section-flex-column">
+
+            <h2>Services</h2>
+
+            <div class="section-flex-row">
+
+                <div class="sub-section-column">
+                    <h3>Bathroom Fitting</h3>
+                    <div class="dummy-container"><p>Picture</p></div>
+                    <div class="dummy-container"><p>Text</p></div>
+                    <div class="dummy-container"><button class="dummy-button">BATHROOM FITTING</button></div>
+                    
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Plumbing</h3>
+                    <div class="dummy-container"><p>Picture</p></div>
+                    <div class="dummy-container"><p>Text</p></div>
+                    <div class="dummy-container"><button class="dummy-button">PLUMBING PAGE</button></div>
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Central Heating</h3>
+                    <div class="dummy-container"><p>Picture</p></div>
+                    <div class="dummy-container"><p>Text</p></div>
+                    <div class="dummy-container"><button class="dummy-button">CENTRAL HEATING</button></div>
+                </div>
+
+            </div>
+
+            <div class="dummy-container row-centre"><button class="dummy-button">VIEW ALL SERVICES</button></div>
+
+        </div>
+
+
+
+        <!-- REVIEWS SECTION -->
+        <div id="reviews" class="section section-flex-column">
+
+            <h2>Testimonials and Reviews</h2>
+
+            <div class="section-flex-row">
+
+                <div class="sub-section-column">
+                    <h3>Review 1</h3>
+                    <div class="dummy-container"><p>Text</p></div>
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Review 2</h3>
+                    <div class="dummy-container"><p>Text</p></div>
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Review 3</h3>
+                    <div class="dummy-container"><p>Text</p></div>
+                </div>
+
+            </div>
+
+            <div class="dummy-container row-centre"><button class="dummy-button">VIEW MORE REVIEWS</button></div>
+
+        </div>
+
+
+        <!-- GALLERY SECTION -->
+        <div id="gallery" class="section section-flex-column">
+
+            <h2>Gallery</h2>
+
+            <div class="section-flex-row">
+
+                <div class="sub-section-column">
+                    <h3>Gallery Image 1</h3>
+                    <div class="dummy-container"><p>Picture</p></div>
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Gallery Image 1</h3>
+                    <div class="dummy-container"><p>Picture</p></div>
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Gallery Image 1</h3>
+                    <div class="dummy-container"><p>Picture</p></div>
+                </div>
+
+            </div>
+
+            <div class="dummy-container row-centre"><button class="dummy-button">VIEW THE GALLERY</button></div>
+
+        </div>
+
+
+        <!-- CONTACT SECTION -->
+        <div id="contact" class="section section-flex-column">
+
+            <h2>Contact Us</h2>
+
+            <div class="section-flex-row">
+
+                <div class="sub-section-column">
+                    <h3>Location</h3>
+                    <div class="dummy-container"><p>Location Details</p></div>
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Telephone</h3>
+                    <div class="dummy-container"><p>Telephone Number</p></div>
+                </div>
+
+                <div class="sub-section-column">
+                    <h3>Email</h3>
+                    <div class="dummy-container"><p>Email Address</p></div>
+                </div>
+
+            </div>
+
+
+            <div class="section-flex-row">
+
+                <div class="sub-section form-section">
+
+                    <form action="">
+                        <p>Contact Form</p>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </div>
+
+                <div class="sub-section form-section">
+                    <p>Google Map</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div> <!-- End of Container Section -->
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="section section-flex-column">
+
+        <div class="section-flex-row footer-sub-section">
+
+            <div class="sub-section-column">
+                <p class="p-bold">Plumbers Co</p>
+                <p>Introduction</p>
+                <p>About Us</p>
+                <p>Services We Provide</p>
+                <p>Read Reviews</p>
+                <p>View Gallery</p>
+                <p>Our Blog</p>
+            </div>
+
+            <div class="sub-section-column">
+                <p class="p-bold">Contact Us</p>
+                <p>Address</p>
+                <p>Telephone</p>
+                <p>Email</p>
+                <p></p>
+            </div>
+
+            <div class="sub-section-column">
+                <p class="p-bold">Legal</p>
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+            </div>
+
+            <div class="sub-section-column">
+                <p class="p-bold">Social Media</p>
+                <p>Facebook</p>
+                <p>X</p>
+                <p>WhatsApp</p>
+            </div>
+
+        </div>
+
+        <p style="text-align: center">© 2025</p>
+
+    </footer>
+
+    
+</body>
+</html>
